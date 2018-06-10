@@ -1,0 +1,51 @@
+body {
+  background-color: grey;
+}
+
+#crescentMoon {
+  margin: 40px auto;
+  position: relative;
+  right: 35px;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 0px blue;
+}
+
+/* Starts with pink box, transformed at 45deg angle
+   Adds content with empty string, each background color of pink
+   in before and after
+   makes them round using the border radius of 50%
+   sets height and width equal to the height and width of original object
+*/
+.heart {
+  margin: 100px auto;
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+}
+
+.heart:after {
+  background-color: pink;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+
+.heart:before {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+/*# sourceMappingURL=style.css.map */
